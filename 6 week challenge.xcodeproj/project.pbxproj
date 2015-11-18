@@ -12,6 +12,11 @@
 		83D31E5F1BFD2153007CF7AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83D31E5D1BFD2153007CF7AB /* Main.storyboard */; };
 		83D31E611BFD2153007CF7AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83D31E601BFD2153007CF7AB /* Assets.xcassets */; };
 		83D31E641BFD2153007CF7AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83D31E621BFD2153007CF7AB /* LaunchScreen.storyboard */; };
+		83D31E6E1BFD29B4007CF7AB /* NameListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D31E6D1BFD29B4007CF7AB /* NameListTableViewController.swift */; };
+		83D31E701BFD29C2007CF7AB /* PairListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D31E6F1BFD29C2007CF7AB /* PairListTableViewController.swift */; };
+		83D31E721BFD2BCC007CF7AB /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D31E711BFD2BCC007CF7AB /* Entry.swift */; };
+		83D31E741BFD2CB1007CF7AB /* EntryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D31E731BFD2CB1007CF7AB /* EntryController.swift */; };
+		83D31E761BFD2F8E007CF7AB /* addEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D31E751BFD2F8D007CF7AB /* addEntryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		83D31E601BFD2153007CF7AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		83D31E631BFD2153007CF7AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		83D31E651BFD2153007CF7AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83D31E6D1BFD29B4007CF7AB /* NameListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NameListTableViewController.swift; sourceTree = "<group>"; };
+		83D31E6F1BFD29C2007CF7AB /* PairListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PairListTableViewController.swift; sourceTree = "<group>"; };
+		83D31E711BFD2BCC007CF7AB /* Entry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
+		83D31E731BFD2CB1007CF7AB /* EntryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryController.swift; sourceTree = "<group>"; };
+		83D31E751BFD2F8D007CF7AB /* addEntryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = addEntryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +67,11 @@
 				83D31E591BFD2153007CF7AB /* AppDelegate.swift */,
 				83D31E5B1BFD2153007CF7AB /* ViewController.swift */,
 				83D31E5D1BFD2153007CF7AB /* Main.storyboard */,
+				83D31E751BFD2F8D007CF7AB /* addEntryViewController.swift */,
+				83D31E711BFD2BCC007CF7AB /* Entry.swift */,
+				83D31E731BFD2CB1007CF7AB /* EntryController.swift */,
+				83D31E6D1BFD29B4007CF7AB /* NameListTableViewController.swift */,
+				83D31E6F1BFD29C2007CF7AB /* PairListTableViewController.swift */,
 				83D31E601BFD2153007CF7AB /* Assets.xcassets */,
 				83D31E621BFD2153007CF7AB /* LaunchScreen.storyboard */,
 				83D31E651BFD2153007CF7AB /* Info.plist */,
@@ -135,6 +150,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83D31E741BFD2CB1007CF7AB /* EntryController.swift in Sources */,
+				83D31E721BFD2BCC007CF7AB /* Entry.swift in Sources */,
+				83D31E761BFD2F8E007CF7AB /* addEntryViewController.swift in Sources */,
+				83D31E6E1BFD29B4007CF7AB /* NameListTableViewController.swift in Sources */,
+				83D31E701BFD29C2007CF7AB /* PairListTableViewController.swift in Sources */,
 				83D31E5C1BFD2153007CF7AB /* ViewController.swift in Sources */,
 				83D31E5A1BFD2153007CF7AB /* AppDelegate.swift in Sources */,
 			);
