@@ -9,7 +9,10 @@
 import UIKit
 
 class addEntryViewController: UIViewController {
+    
     @IBOutlet weak var entryTextField: UITextField!
+    
+    var entry: Entry?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,6 +21,17 @@ class addEntryViewController: UIViewController {
     }
 
     @IBAction func addButtonTapped(sender: AnyObject) {
+        
+        if let entry = self.entry {
+            entry.title = self.entryTextField.text!
+        } else {
+            let newEntry = Entry(title: self.entryTextField.text!)
+            EntryController.sharedController.addEntry(newEntry)
+            self.entry = newEntry
+        }
+        
+        self.navigationController?.popViewControllerAnimated(true)
+        
     }
     
     
@@ -26,15 +40,19 @@ class addEntryViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        
+        textField.resignFirstResponder()
+        
+        return true
     }
-    */
+    
+    func updateWithEntry(entry: Entry) {
+        
+        self.entry = entry
+        
+        self.entryTextField.text = entry.title
+    }
+
 
 }

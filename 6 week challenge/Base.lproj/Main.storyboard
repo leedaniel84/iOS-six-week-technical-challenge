@@ -44,27 +44,46 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bXX-wy-ob3">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bXX-wy-ob3">
                                 <rect key="frame" x="102" y="209" width="117" height="43"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="43" id="Hd9-cD-WBH"/>
                                 </constraints>
-                                <state key="normal" title="Add"/>
+                                <state key="normal" title="Add">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Add">
+                                            <attributes>
+                                                <font key="NSFont" size="24" name="IowanOldStyle-Bold"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
                                 <connections>
                                     <action selector="addButtonTapped:" destination="eVv-Nd-IMX" eventType="touchUpInside" id="1WZ-ih-FZM"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please Enter Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wr8-I3-S0m">
+                                <rect key="frame" x="0.0" y="64" width="320" height="33"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="bXX-wy-ob3" firstAttribute="top" secondItem="uln-j3-ZI5" secondAttribute="bottom" constant="51" id="0rn-ok-gae"/>
+                            <constraint firstItem="Wr8-I3-S0m" firstAttribute="trailing" secondItem="uln-j3-ZI5" secondAttribute="trailing" id="73V-di-YqY"/>
                             <constraint firstItem="bXX-wy-ob3" firstAttribute="centerX" secondItem="uln-j3-ZI5" secondAttribute="centerX" id="J2p-6K-OFf"/>
+                            <constraint firstItem="Wr8-I3-S0m" firstAttribute="top" secondItem="Gau-10-Wca" secondAttribute="bottom" id="PV8-O3-Uno"/>
                             <constraint firstItem="uln-j3-ZI5" firstAttribute="leading" secondItem="RmW-LB-qtZ" secondAttribute="leading" id="UQi-zC-rX0"/>
+                            <constraint firstItem="uln-j3-ZI5" firstAttribute="top" secondItem="Wr8-I3-S0m" secondAttribute="bottom" constant="31" id="dKc-rv-qk1"/>
                             <constraint firstAttribute="trailing" secondItem="uln-j3-ZI5" secondAttribute="trailing" id="hZh-F7-Egb"/>
                             <constraint firstItem="uln-j3-ZI5" firstAttribute="top" secondItem="Gau-10-Wca" secondAttribute="bottom" constant="64" id="jHp-iV-fdr"/>
                             <constraint firstItem="bXX-wy-ob3" firstAttribute="leading" secondItem="RmW-LB-qtZ" secondAttribute="leadingMargin" constant="86" id="rcv-RY-kVl"/>
+                            <constraint firstItem="Wr8-I3-S0m" firstAttribute="leading" secondItem="uln-j3-ZI5" secondAttribute="leading" id="wwO-eT-BBC"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>

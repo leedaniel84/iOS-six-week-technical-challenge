@@ -10,10 +10,16 @@ import Foundation
 
 class EntryController {
     
+    static let sharedController = EntryController()
+    
     var entries: [Entry]
     
     init() {
         self.entries = []
+    }
+    
+    func addEntry(entry: Entry) {
+        entries.append(entry)
     }
     
     

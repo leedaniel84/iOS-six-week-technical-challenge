@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Entry {
+class Entry: Equatable {
     
     var title: String
     
@@ -17,4 +17,8 @@ class Entry {
         self.title = title
     }
     
+}
+
+func == (lhs: Entry, rhs: Entry) -> Bool {
+    return ObjectIdentifier(lhs) == ObjectIdentifier(rhs)
 }
