@@ -70,14 +70,36 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3j9-us-q7f">
+                                <rect key="frame" x="102" y="260" width="117" height="43"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="DOP-MB-tMT"/>
+                                </constraints>
+                                <state key="normal" title="Clear">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Clear">
+                                            <attributes>
+                                                <font key="NSFont" size="24" name="IowanOldStyle-Bold"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="clearButtonTapped:" destination="eVv-Nd-IMX" eventType="touchUpInside" id="Kr4-vg-aSk"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="bXX-wy-ob3" firstAttribute="top" secondItem="uln-j3-ZI5" secondAttribute="bottom" constant="51" id="0rn-ok-gae"/>
                             <constraint firstItem="Wr8-I3-S0m" firstAttribute="trailing" secondItem="uln-j3-ZI5" secondAttribute="trailing" id="73V-di-YqY"/>
+                            <constraint firstItem="3j9-us-q7f" firstAttribute="top" secondItem="bXX-wy-ob3" secondAttribute="bottom" constant="8" symbolic="YES" id="Co5-Ul-fPT"/>
                             <constraint firstItem="bXX-wy-ob3" firstAttribute="centerX" secondItem="uln-j3-ZI5" secondAttribute="centerX" id="J2p-6K-OFf"/>
                             <constraint firstItem="Wr8-I3-S0m" firstAttribute="top" secondItem="Gau-10-Wca" secondAttribute="bottom" id="PV8-O3-Uno"/>
+                            <constraint firstItem="3j9-us-q7f" firstAttribute="leading" secondItem="bXX-wy-ob3" secondAttribute="leading" id="Pvc-9t-YJV"/>
+                            <constraint firstItem="3j9-us-q7f" firstAttribute="trailing" secondItem="bXX-wy-ob3" secondAttribute="trailing" id="Qee-MH-d8m"/>
                             <constraint firstItem="uln-j3-ZI5" firstAttribute="leading" secondItem="RmW-LB-qtZ" secondAttribute="leading" id="UQi-zC-rX0"/>
                             <constraint firstItem="uln-j3-ZI5" firstAttribute="top" secondItem="Wr8-I3-S0m" secondAttribute="bottom" constant="31" id="dKc-rv-qk1"/>
                             <constraint firstAttribute="trailing" secondItem="uln-j3-ZI5" secondAttribute="trailing" id="hZh-F7-Egb"/>

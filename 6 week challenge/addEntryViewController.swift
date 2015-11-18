@@ -34,6 +34,11 @@ class addEntryViewController: UIViewController {
         
     }
     
+    @IBAction func clearButtonTapped(sender: AnyObject) {
+        
+        entryTextField.text = ""
+        
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
