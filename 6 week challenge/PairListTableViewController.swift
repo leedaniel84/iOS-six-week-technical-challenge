@@ -27,18 +27,18 @@ class PairListTableViewController: UITableViewController {
 
     // MARK: - Table view data source
 
-//    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-//        // #warning Incomplete implementation, return the number of sections
-//        return
-//    }
-//    
-//    override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-//        return nil
-//    }
+    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        // #warning Incomplete implementation, return the number of sections
+        return EntryController.sharedController.entries.count / 2
+    }
+    
+    override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return nil
+    }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 6
+        return EntryController.sharedController.entries.count
     }
 
     
