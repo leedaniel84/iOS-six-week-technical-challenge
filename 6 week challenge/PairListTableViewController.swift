@@ -16,11 +16,7 @@ class PairListTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        tableView.reloadData()
     }
 
     override func didReceiveMemoryWarning() {
@@ -40,9 +36,9 @@ class PairListTableViewController: UITableViewController {
         return numberOfSections
     }
     
-//    override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-//        return "Pair \(section)"
-//    }
+    override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return "Pair \(section)"
+    }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 
@@ -53,10 +49,10 @@ class PairListTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("pairCell", forIndexPath: indexPath)
 
-        let entry = EntryController.sharedController.randomEntries[indexPath.section + indexPath.row]
+        let entry = EntryController.sharedController.randomEntries[indexPath.row + indexPath.section * 2]
         
         cell.textLabel?.text = entry.title
-
+        
         return cell
     }
 

@@ -30,13 +30,15 @@ class EntryController {
         
         for item in randomEntries {
             if let index = randomEntries.indexOf(item) {
-                let randomIndex = Int(arc4random_uniform(UInt32(index + 1)))
+                let randomIndex = Int(arc4random_uniform(UInt32(index + 2)))
                 let removedName = randomEntries.removeAtIndex(index)
                 randomEntries.insert(removedName, atIndex: randomIndex)
                 
             }
         }
     }
+    
+
     
     func addEntry(entry: Entry) {
         entries.append(entry)
