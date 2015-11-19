@@ -41,8 +41,18 @@ class PairListTableViewController: UITableViewController {
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        var numberOfSections: Int
+        if EntryController.sharedController.entries.count % 2 == 0 {
+            numberOfSections = EntryController.sharedController.entries.count / 2
+        } else {
+            numberOfSections = (EntryController.sharedController.entries.count / 2) + 1
+        }
 
-        return 2
+        if section == (numberOfSections-1) {
+            return 1
+        } else {
+            return 2
+        }
     }
 
     
@@ -50,6 +60,7 @@ class PairListTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCellWithIdentifier("pairCell", forIndexPath: indexPath)
 
         let entry = EntryController.sharedController.randomEntries[indexPath.row + indexPath.section * 2]
+        
         
         cell.textLabel?.text = entry.title
         
