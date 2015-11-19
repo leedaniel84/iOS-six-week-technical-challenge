@@ -61,6 +61,9 @@ class NameListTableViewController: UITableViewController {
         }
     }
     
+    @IBAction func clearButtonTapped(sender: AnyObject) {
+       
+    }
 
 
     @IBAction func randomizerButtonTapped(sender: AnyObject) {
