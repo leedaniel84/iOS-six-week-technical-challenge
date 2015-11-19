@@ -9,6 +9,9 @@
 import UIKit
 
 class PairListTableViewController: UITableViewController {
+    @IBOutlet weak var entryTextField: UITableViewCell!
+    
+    var entry: Entry?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,26 +32,36 @@ class PairListTableViewController: UITableViewController {
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return EntryController.sharedController.entries.count / 2
+        var sectionsToReturn : Int!
+        if EntryController.sharedController.entries.count % 2 == 0 {
+            sectionsToReturn = EntryController.sharedController.entries.count / 2
+        } else {
+            sectionsToReturn = (EntryController.sharedController.entries.count / 2) + 1
+        }
+        return sectionsToReturn
     }
     
-    override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return nil
-    }
+//    override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+//        return "Pair \(section)"
+//    }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return EntryController.sharedController.entries.count
+        return 2
     }
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("pairCell", forIndexPath: indexPath)
 
-        // Configure the cell...
+        let entry = EntryController.sharedController.entries[indexPath.section * 2 + indexPath.row]
+        
+        cell.textLabel?.text = entry.title
 
         return cell
     }
+
+    
     
 
     /*
