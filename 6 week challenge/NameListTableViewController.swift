@@ -15,11 +15,6 @@ class NameListTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
 
     override func viewWillAppear(animated: Bool) {
@@ -70,6 +65,7 @@ class NameListTableViewController: UITableViewController {
 
     @IBAction func randomizerButtonTapped(sender: AnyObject) {
         self.performSegueWithIdentifier("toShowDetail", sender: self)
+        EntryController.sharedController.randomArray()
         
     }
     
@@ -77,13 +73,13 @@ class NameListTableViewController: UITableViewController {
     
      //MARK: - Navigation
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        
-        if segue.identifier == "toShowDetail" {
-            
-            EntryController.sharedController.randomArray()
-
-        }
-
-    }
+//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+//        
+//        if segue.identifier == "toShowDetail" {
+//            
+//            EntryController.sharedController.randomArray()
+//
+//        }
+//
+//    }
 }
