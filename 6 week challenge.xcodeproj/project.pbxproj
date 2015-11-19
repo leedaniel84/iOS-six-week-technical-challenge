@@ -16,7 +16,7 @@
 		83D31E721BFD2BCC007CF7AB /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D31E711BFD2BCC007CF7AB /* Entry.swift */; };
 		83D31E741BFD2CB1007CF7AB /* EntryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D31E731BFD2CB1007CF7AB /* EntryController.swift */; };
 		83D31E761BFD2F8E007CF7AB /* addEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D31E751BFD2F8D007CF7AB /* addEntryViewController.swift */; };
-		83FA53751BFD89FB002626C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83FA53741BFD89FB002626C0 /* Main.storyboard */; };
+		83FA53AC1BFE9028002626C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83FA53AB1BFE9028002626C0 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,7 +31,7 @@
 		83D31E711BFD2BCC007CF7AB /* Entry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
 		83D31E731BFD2CB1007CF7AB /* EntryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryController.swift; sourceTree = "<group>"; };
 		83D31E751BFD2F8D007CF7AB /* addEntryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = addEntryViewController.swift; sourceTree = "<group>"; };
-		83FA53741BFD89FB002626C0 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../../../../.Trash/Main.storyboard; sourceTree = "<group>"; };
+		83FA53AB1BFE9028002626C0 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +68,7 @@
 				83D31E5B1BFD2153007CF7AB /* ViewController.swift */,
 				83D31E751BFD2F8D007CF7AB /* addEntryViewController.swift */,
 				83D31E711BFD2BCC007CF7AB /* Entry.swift */,
-				83FA53741BFD89FB002626C0 /* Main.storyboard */,
+				83FA53AB1BFE9028002626C0 /* Main.storyboard */,
 				83D31E731BFD2CB1007CF7AB /* EntryController.swift */,
 				83D31E6D1BFD29B4007CF7AB /* NameListTableViewController.swift */,
 				83D31E6F1BFD29C2007CF7AB /* PairListTableViewController.swift */,
@@ -138,7 +138,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83FA53751BFD89FB002626C0 /* Main.storyboard in Resources */,
+				83FA53AC1BFE9028002626C0 /* Main.storyboard in Resources */,
 				83D31E641BFD2153007CF7AB /* LaunchScreen.storyboard in Resources */,
 				83D31E611BFD2153007CF7AB /* Assets.xcassets in Resources */,
 			);
